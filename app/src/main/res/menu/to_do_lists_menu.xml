@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuSearch"
+        android:icon="@drawable/ic_vector_search"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuMenu"
+        android:icon="@drawable/ic_vector_menu"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menuSort"
+                android:orderInCategory="100"
+                android:title="Sort"
+                app:showAsAction="never" >
+                <menu>
+                    <item
+                        android:id="@+id/menuSortDifficulty"
+                        android:orderInCategory="100"
+                        android:title="sort by lowest difficulty"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/menuSortImportance"
+                        android:orderInCategory="100"
+                        android:title="sort by highest importance"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/menuSortDefault"
+                        android:orderInCategory="100"
+                        android:title="default (countdown, then importance)"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/menuSettings"
+                android:orderInCategory="100"
+                android:title="Settings"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

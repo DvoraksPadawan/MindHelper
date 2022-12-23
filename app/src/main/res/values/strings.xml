@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BrainHelper</string>
+    <string-array name="spinnerOptions">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="spinnerDateOptions">
+        <item>AFAP</item>
+        <item>select date</item>
+        <item>ASAP</item>
+    </string-array>
+    <string-array name="spinnerTimeOptions">
+        <item>23:59</item>
+        <item>select time</item>
+        <item>0:00</item>
+    </string-array>
+</resources>

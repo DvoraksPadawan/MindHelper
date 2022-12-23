@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tvCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/andika_new_basic"
+            android:lineSpacingExtra="8sp"
+            android:lineSpacingMultiplier="0"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white70p"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/sTime"
+            app:layout_constraintTop_toBottomOf="@+id/tvImportance" />
+
+        <Spinner
+            android:id="@+id/sTime"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:lineSpacingExtra="8sp"
+            android:lineSpacingMultiplier="0"
+            app:layout_constraintStart_toStartOf="@+id/tvImportance"
+            app:layout_constraintTop_toBottomOf="@+id/tvImportance" />
+
+        <Spinner
+            android:id="@+id/sImportance"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tvImportance"
+            app:layout_constraintStart_toEndOf="@+id/tvImportance"
+            app:layout_constraintTop_toTopOf="@+id/tvImportance" />
+
+        <TextView
+            android:id="@+id/tvImportance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/andika_new_basic"
+            android:lineSpacingExtra="9sp"
+            android:lineSpacingMultiplier="0"
+            android:text="Importance:"
+            android:textColor="@color/white70p"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDifficulty"
+            app:layout_constraintStart_toEndOf="@+id/sDifficulty"
+            app:layout_constraintTop_toTopOf="@+id/tvDifficulty" />
+
+        <TextView
+            android:id="@+id/tvDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:ems="10"
+            android:fontFamily="@font/andika_new_basic"
+            android:lineSpacingExtra="7sp"
+            android:lineSpacingMultiplier="0"
+            android:text="Difficulty:"
+            android:textColor="@color/white70p"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/etRowTitle"
+            app:layout_constraintTop_toBottomOf="@+id/etRowTitle" />
+
+        <pac.underpackage.brainhelper.CustomEditText
+            android:id="@+id/etRowTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="type task..."
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white60p"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibCheck"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibCheck2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_unchecked"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="src_in"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibCheck" />
+
+        <Spinner
+            android:id="@+id/sDifficulty"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/tvDifficulty"
+            app:layout_constraintTop_toBottomOf="@+id/etRowTitle" />
+
+        <ImageButton
+            android:id="@+id/bDeleteCheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_vector_check_box"
+            android:backgroundTint="@color/red"
+            android:backgroundTintMode="src_in"
+            android:foregroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRowTitle" />
+
+        <Spinner
+            android:id="@+id/sDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvDifficulty"
+            app:layout_constraintTop_toBottomOf="@+id/tvDifficulty" />
+
+        <ProgressBar
+            android:id="@+id/ibCheck"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="src_in"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:progress="75"
+            android:progressDrawable="@drawable/progress_circle"
+            android:progressTint="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dMenuDeleteAll"
+        android:icon="@drawable/ic_vector_select_all"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dMenuCopy"
+        android:icon="@drawable/ic_vector_copy"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dMenuDelete"
+        android:icon="@drawable/ic_vector_bin"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+</menu>
