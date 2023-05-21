@@ -1,4 +1,4 @@
-The android app with which you can create todolists of tasks (with or without template), sort them (lists and tasks also), modify them, etc. The data are saved into SQLlite.
+This Android app is primarily designed for individuals with ADHD. It allows users to create to-do lists of tasks (with or without templates), sort them (both lists and tasks), modify them, and more. The data is saved into SQLite for efficient storage and retrieval.
 
 Play store link:
 https://play.google.com/store/apps/details?id=pac.underpackage.brainhelper
